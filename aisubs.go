@@ -1,4 +1,4 @@
-package aisubs
+package main
 
 import (
 	"bufio"
