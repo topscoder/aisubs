@@ -7,6 +7,9 @@ import (
 	"os"
 	"strings"
 	"time"
+
+	"github.com/sashabaranov/go-openai"
+	"golang.org/x/net/publicsuffix"
 )
 
 func generateSubdomains(subdomain, domain, apiKey string, amount string) ([]string, error) {
