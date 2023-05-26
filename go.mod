@@ -1,7 +1,6 @@
 module github.com/topscoder/aisubs
 
-go 1.20
-
+go 1.16
 
 require(
 	github.com/sashabaranov/go-openai
