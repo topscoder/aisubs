@@ -10,7 +10,7 @@ This is a script that generates new subdomains based on a given subdomain using 
 ## Installation
 
 ```bash
-go install github.com/your-username/aisubs@latest
+go install github.com/topscoder/aisubs@latest
 ```
 
 ## Usage
