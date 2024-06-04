@@ -26,7 +26,7 @@ go install github.com/topscoder/aisubs@latest
 2. Providing input via command line:
 
     ```bash
-    echo "www.domain.com" | go run main.go --apikey <OpenAI API Key> --amount 5
+    echo "www.domain.com" | aisubs --apikey <OpenAI API Key> --amount 5
     ```
 
     Replace `<OpenAI API Key>` with your actual OpenAI API key.
@@ -55,7 +55,7 @@ api.example.com
 We can generate 3 new subdomains similar to www.example.com using the script:
 
 ```bash
-cat subdomains.txt | go run main.go --apikey <OpenAI API Key> --amount 3
+cat subdomains.txt | aisubs --apikey <OpenAI API Key> --amount 3
 ```
 
 The script will output something like this:
