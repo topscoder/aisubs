@@ -38,6 +38,11 @@ func generateSubdomains(subdomain, domain, apiKey string, amount string) ([]stri
 				time.Sleep(20 * time.Second)
 				continue
 			}
+
+			if strings.Contains(err.Error(), "You exceeded your current quota") {
+				fmt.Println("You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors")
+			}
+
 			return nil, fmt.Errorf("error generating subdomains: %w", err)
 		}
 
